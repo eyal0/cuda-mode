@@ -344,6 +344,7 @@ Key bindings:
   (run-hooks 'cuda-mode-hook)
   (setq font-lock-keywords-case-fold-search t)
   (setq c-buffer-is-cc-mode 'c++-mode)
+  (c-run-mode-hooks 'c-mode-common-hook)
   (c-update-modeline))
 
 (provide 'cuda-mode)
